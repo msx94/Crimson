@@ -18,7 +18,6 @@ var dataroot = __dirname + '/data/';
 
 /* On déclare les ressources statiques */
 app.use(express.static(__dirname + '/data'));
-app.use(express.static(__dirname + '/Kiwideo'));
 app.use(express.static(__dirname + '/bootstrap'));
 
 app.use(session({secret: 'Crimson'}));
@@ -33,7 +32,7 @@ app.get('/', function(req, res) {
 
     filesList = [];
     fs.readdir(dataroot, function(err, files) {
-	    res.render(__dirname + '/bootstrap/index.ejs');
+	    res.render(__dirname + '/bootstrap/pages/index.ejs');
     });
 
 })
@@ -53,7 +52,7 @@ app.get('/home', function(req, res) {
 		});
 		var currentFolder = req.session.type.split('/');
 
-		res.render(__dirname + '/bootstrap/index.ejs', {filesList: filesList, currentFolder: currentFolder, error: "Le projet sélectionné ne contient pas de fichier ressource!"});
+		res.render(__dirname + '/bootstrap/pages/index.ejs', {filesList: filesList, currentFolder: currentFolder, error: "Le projet sélectionné ne contient pas de fichier ressource!"});
 	});
 })
 

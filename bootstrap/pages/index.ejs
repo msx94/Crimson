@@ -277,26 +277,28 @@
                                 <!-- /input-group -->
                             </li>
                             <li>
-                                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Crimson</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-upload fa-fw"></i> Upload<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="flot.html">Flot Charts</a>
+                                        <a href="flot.html">Upload fichier</a>
                                     </li>
                                     <li>
-                                        <a href="morris.html">Morris.js Charts</a>
+                                        <a href="morris.html">Upload dossier</a>
                                     </li>
                                 </ul>
-                                <!-- /.nav-second-level -->
+                                <!-- /.nav-second-level -->i
                             </li>
                             <li>
-                                <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                                <a href="tables.html"><i class="fa fa-music fa-fw"></i> Musiques</a>
                             </li>
                             <li>
-                                <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                                <a href="forms.html"><i class="fa fa-film fa-fw"></i> Videos</a>
                             </li>
+                            <li>
+                                <a href="/photos"><i class="fa fa-photo fa-fw"></i> Photos</a>
                             <li>
                                 <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
@@ -373,20 +375,31 @@
                             HTML5 audio not supported
                         </audio>
 
-                        <button onclick="rewindAudio();">
-                        </button>
-
-                        <a id="play" type="button" aria-label="Play" title="Play" onclick="playAudio();">
-                            <svg class="svg-icon svg-icon-play" viewBox="0 0 12 12" aria-hidden="true" height="32" width="32">
-                                <g>
-                                    <path d="M1.56234352,0.0507347547 C1.31236683,-0.0934825654 1,0.0869292487 1,0.375524086 L1,11.6244759 C1,11.9130708 1.31236683,12.0934826 1.56234352,11.9492652 L11.3114351,6.32478933 C11.5615506,6.18049195 11.5615506,5.81950805 11.3114351,5.67521067 L1.56234352,0.0507347547 L1.56234352,0.0507347547 Z">
-                                    </path>
-                                </g>
-                            </svg>
+                        <a id="previous" type="button" aria-label="Previous" title="Previous">
+                            <i class="fa fa-previous fa-fw" style="font-size: 2.50em;">
+                            </i>
                         </a>
 
-                        <button onclick="forwardAudio();">
-                        </button>
+                        <a id="rewind" type="button" aria-label="Rewind" title="Rewind" onclick="rewindAudio();">
+                            <i class="fa fa-rewind fa-fw" style="font-size: 2.50em;">
+                            </i>
+                        </a>
+
+                        <a id="play" type="button" aria-label="Play" title="Play" onclick="playAudio();">
+                            <i class="fa fa-play fa-fw" style="font-size: 2.50em;">
+                            </i>
+                        </a>
+
+                        <a id="forward" type="button" aria-label="Forward" title="Forward" onclick="forwardAudio();">
+                            <i class="fa fa-forward fa-fw" style="font-size: 2.50em;">
+                            </i>
+                        </a>
+
+                        <a id="next" type="button" aria-label="Next" title="Next">
+                            <i class="fa fa-next fa-fw" style="font-size: 2.50em;">
+                            </i>
+                        </a>
+
                     </div>
                     <!-- ./player -->
                 </div>
